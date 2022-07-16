@@ -46,6 +46,10 @@ editor_options:
 
 \- Bloques de código ejecutables dentro del Qmd.
 
+## Descarga esta presentación.
+
+![](img/frame.png){fig-align="center"}
+
 ## MarkDown and Quarto. {background="#43464B"}
 
 ![](images/markdown-flowchart.png){fig-align="center"}
