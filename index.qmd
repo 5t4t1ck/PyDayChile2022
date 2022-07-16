@@ -1,0 +1,128 @@
+---
+title: "Uso de Quarto en la enseñanza."
+subtitle: "Crea tus recursos educativos desde herramientas libres y abiertas."
+date: "today"
+author: "Lic. Diego Medardo Saavedra García Mg. Sc."
+lang: "es"
+format:
+  revealjs:
+    #chalkboard: 
+      #buttons: false
+    #toc: true
+    incremental: false
+    slide-number: true
+    preview-links: auto
+    logo: https://pyday.cl/images/pythonchile_icon.png
+    css: styles.css
+    footer: <https://pyday.cl/>
+    theme: dark
+    makeindex: true
+    #multiplex: true
+    transition: fade
+    chalkboard: true #Pizarra
+    auto-stretch: false
+    smaller: false
+    scrollable: true
+    menu: true
+editor: visual
+execute: 
+  echo: true
+    
+bibliography: Bibliografia.bib
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl"
+editor_options: 
+  chunk_output_type: console
+---
+
+## Agenda.
+
+\- ¿Qué es Pandoc?
+
+\- ¿Quarto CLI?
+
+\- Formatos de salida de Quarto documents
+
+\- Ejemplos de Uso: Documentos estáticos, sitios web, presentaciones,
+
+\- Bloques de código ejecutables dentro del Qmd.
+
+## MarkDown and Quarto. {background="#43464B"}
+
+![](images/markdown-flowchart.png){fig-align="center"}
+
+![](images/ipynb-how-it-works.png){fig-align="center"}
+
+## Ejemplo.
+
+Render con Quarto un **ipynb.**
+
+```{bash}
+
+quarto preview hello.ipynb
+```
+
+Render con Quarto de un **ipynb** a **html/docx.**
+
+```{bash}
+quarto render hello.ipynb --to html
+quarto render hello.ipynb --to docx
+```
+
+Uso de **matplotlib** e **ipynb.**
+
+```{bash}
+py -m pip install matplotlib plotly_express
+py -m jupyter lab hello.ipynb
+```
+
+## **Pandoc**.
+
+::: columns
+::: {.column width="50%"}
+Es una serie de extensiones útiles de la sintaxis de markdown, quizá lo más importante de ello sea poder tener **los bloques de código** delimitados con **resaltado de sintaxis**; **las comillas inteligentes**. [@Pandoc.2022]
+:::
+
+::: {.column width="50%"}
+![](images/Workfow-for-the-generation-of-multiple-document-formats-with-Pandoc-The-markdown-MD.png){fig-align="center"}
+:::
+:::
+
+## **Quarto-CLI**
+
+::: columns
+::: {.column width="50%"}
+![](images/th-3231271802.jpg){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+Quarto® es un sistema de publicación científica y técnica de código abierto construido sobre Pandoc.
+:::
+:::
+
+Se tiene la posibilidad de crear contenido dinámico con **Python**, **R**, **Julia** y **Observable**.
+
+## ¿Qué son los Quarto Documents?
+
+Se puede crear documentos de **texto plano** en **markdown** o **cuadernos Jupyter** y a partir de ellos tener la posibilidad de publicar **artículos**, **informes**, **presentaciones**, **sitios web**, **blogs** y **libros** de alta calidad en **HTML**, **PDF**, **MS Word**, **ePub**, etc.
+
+Usted tiene la posibilidad de escribir con markdown un documento científico, incluyendo **ecuaciones**, **citas**, **referencias cruzadas**, **paneles de figuras**, **diseño avanzado** y más [@quarto2022].
+
+## Ejemplo.
+
+-   [Uso de Quarto en el desarrollo de Pensamiento Computacional.](https://5t4t1ck.github.io/Recursos-Informatica-1/#introducci%C3%B3n-al-lenguaje-de-programaci%C3%B3n-python.)
+
+-   [Aprendiendo Django Framework.](https://5t4t1ck.github.io/Curso-de-Python-junio-2022/Frameworks/#/patr%C3%B3n-de-arquitectura.)
+
+## Demo.
+
+## Gracias.
+
+![](img/img.jpg){fig-align="center"}
+
+Diego Saavedra
+
+[Software Developer](https://5t4t1ck.github.io/)
+
+## Referencias
+
+## 
